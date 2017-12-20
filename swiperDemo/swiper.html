@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="swiper/css/swiper.css">
+    <style>
+        
+        html, body {
+        position: relative;
+        height: 100%;
+        width:100%;  
+        }
+        body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+        }
+        .swiper-container {
+        width: 100%;
+        height: 100%;
+        }
+        .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        }
+  
+        iframe{
+            height:100%;
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="swiper-container swiper-container-horizontal">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide" >
+                <iframe src="index1.html"></iframe>
+            </div>
+            <div class="swiper-slide" >
+                <iframe src="index2.html"></iframe>
+            </div>
+            <div class="swiper-slide" >
+                <iframe src="index3.html"></iframe>
+            </div> 
+
+        </div>
+
+        <div class="swiper-pagination swiper-pagination-bullets">
+            <span class="swiper-pagination-bullet">
+                                
+            </span>
+            <span class="swiper-pagination-bullet"> 
+                             
+            </span>
+            <span class="swiper-pagination-bullet"> 
+                               
+            </span>
+        </div>
+    </div>
+
+    <script src='swiper/jquery.js'></script>
+    <script src='swiper/js/swiper.jquery.js'></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+        pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+    
+    </script>
+    
+  
+</body>
+</html>
