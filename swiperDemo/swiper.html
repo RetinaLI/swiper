@@ -56,39 +56,44 @@
         <div class="swiper-wrapper">
 
             <div class="swiper-slide" >
-                <iframe src="index1.html"></iframe>
+                <iframe src="index1.html" scrolling="no"></iframe>
             </div>
             <div class="swiper-slide" >
-                <iframe src="index2.html"></iframe>
+                <iframe src="index2.html"  scrolling="no" ></iframe>
             </div>
             <div class="swiper-slide" >
-                <iframe src="index3.html"></iframe>
+                <iframe src="index3.html" scrolling="no"></iframe>
             </div> 
 
         </div>
 
-        <div class="swiper-pagination swiper-pagination-bullets">
-            <span class="swiper-pagination-bullet">
-                                
-            </span>
-            <span class="swiper-pagination-bullet"> 
-                             
-            </span>
-            <span class="swiper-pagination-bullet"> 
-                               
-            </span>
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+            <span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
         </div>
     </div>
 
     <script src='swiper/jquery.js'></script>
     <script src='swiper/js/swiper.jquery.js'></script>
     <script>
+
         var swiper = new Swiper('.swiper-container', {
-        pagination: {
-        el: '.swiper-pagination',
-      },
-    });
-    
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: 3000,
+//            pagination: {
+//                el: '.swiper-pagination',
+//                clickable: true,
+//            },
+            pagination : '.swiper-pagination',
+            loop : true,
+//            navigation: {
+//                nextEl: '.swiper-button-next',
+//                prevEl: '.swiper-button-prev',
+//            },
+        });
+
     </script>
     
   
